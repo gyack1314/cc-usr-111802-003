@@ -9,7 +9,7 @@ class Chain(unittest.TestCase):
  def tearDown(self):self.db.close()
  def test_report(self):
   for doc in DATA['documents']:receive(self.db,doc)
-  a,b=[generate(self.db,t) for t in DATA['known_at']]
+  a,b=[generate(self.db,t) for t in DATA['known_at'][:2]]
   self.assertEqual(a['decisions'][0]['status'],'常态');self.assertEqual(b['decisions'][0]['status'],'关注')
   self.assertEqual(difference(a,b)['changed'],['obs-1']);self.assertEqual(len(b['decisions'][0]['sources']),3)
  def test_repeat_and_conflict(self):

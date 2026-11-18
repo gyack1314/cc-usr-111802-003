@@ -1,7 +1,8 @@
 {
   "known_at": [
     "2026-08-01T00:00:00+00:00",
-    "2026-09-01T00:00:00+00:00"
+    "2026-09-01T00:00:00+00:00",
+    "2026-10-01T00:00:00+00:00"
   ],
   "documents": [
     {
@@ -82,6 +83,270 @@
             "region": "fishery-A",
             "unit": "资料单位",
             "value": 26
+          }
+        }
+      ]
+    },
+    {
+      "source": "渔业资源站",
+      "document_id": "habitat-dahuangyu",
+      "revision": "r1",
+      "received_at": "2026-07-25T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "habitat",
+          "id": "habitat-1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "species": "大黄鱼",
+            "depth_min": 0,
+            "depth_max": 100
+          }
+        }
+      ]
+    },
+    {
+      "source": "海洋资料中心",
+      "document_id": "profile-reference",
+      "revision": "r1",
+      "received_at": "2026-07-26T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "reference",
+          "id": "ref-0-10",
+          "revision": "r1",
+          "valid_from": "1991-01-01",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "depth_min": 0,
+            "depth_max": 10,
+            "range_min": 19,
+            "range_max": 23
+          }
+        },
+        {
+          "kind": "reference",
+          "id": "ref-10-30",
+          "revision": "r1",
+          "valid_from": "1991-01-01",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "depth_min": 10,
+            "depth_max": 30,
+            "range_min": 17,
+            "range_max": 21
+          }
+        },
+        {
+          "kind": "reference",
+          "id": "ref-30-60",
+          "revision": "r1",
+          "valid_from": "1991-01-01",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "depth_min": 30,
+            "depth_max": 60,
+            "range_min": 15,
+            "range_max": 19
+          }
+        },
+        {
+          "kind": "reference",
+          "id": "ref-60-100",
+          "revision": "r1",
+          "valid_from": "1991-01-01",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "depth_min": 60,
+            "depth_max": 100,
+            "range_min": 13,
+            "range_max": 17
+          }
+        }
+      ]
+    },
+    {
+      "source": "业务部门",
+      "document_id": "thermal-rule",
+      "revision": "r1",
+      "received_at": "2026-07-27T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "thermal_rule",
+          "id": "thermal-rule-1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "minimum_coverage": 0.75,
+            "medium_delta": 1,
+            "high_delta": 3,
+            "action_low": "正常作业",
+            "action_medium": "限捕",
+            "action_high": "停捕"
+          }
+        }
+      ]
+    },
+    {
+      "source": "观测机构",
+      "document_id": "profile-leg1",
+      "revision": "r1",
+      "received_at": "2026-07-31T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "observation",
+          "id": "profile-a",
+          "revision": "r1",
+          "valid_from": "2026-07-20",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "depth_min": 10,
+            "depth_max": 30,
+            "value": 22.5
+          }
+        },
+        {
+          "kind": "observation",
+          "id": "profile-b",
+          "revision": "r1",
+          "valid_from": "2026-07-20",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "depth_min": 30,
+            "depth_max": 60,
+            "value": 17.5
+          }
+        },
+        {
+          "kind": "observation",
+          "id": "profile-neighbor",
+          "revision": "r1",
+          "valid_from": "2026-07-20",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-B",
+            "unit": "摄氏度",
+            "depth_min": 10,
+            "depth_max": 30,
+            "value": 25
+          }
+        }
+      ]
+    },
+    {
+      "source": "观测机构",
+      "document_id": "profile-leg2",
+      "revision": "r1",
+      "received_at": "2026-08-28T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "observation",
+          "id": "profile-c",
+          "revision": "r1",
+          "valid_from": "2026-08-25",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "depth_min": 0,
+            "depth_max": 10,
+            "value": 22
+          }
+        },
+        {
+          "kind": "observation",
+          "id": "profile-d",
+          "revision": "r1",
+          "valid_from": "2026-08-25",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "depth_min": 60,
+            "depth_max": 100,
+            "value": 16
+          }
+        }
+      ]
+    },
+    {
+      "source": "管理站",
+      "document_id": "review-1",
+      "revision": "r1",
+      "received_at": "2026-08-30T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "review",
+          "id": "review-1",
+          "revision": "r1",
+          "valid_from": "2026-08-30",
+          "payload": {
+            "region": "fishery-A",
+            "reason": "补采表层与底层剖面，栖息深度带覆盖率达标，重新分层并发布停捕建议",
+            "changed_inputs": ["profile-c", "profile-d"],
+            "before_known_at": "2026-08-01T00:00:00+00:00",
+            "after_known_at": "2026-09-01T00:00:00+00:00"
+          }
+        }
+      ]
+    },
+    {
+      "source": "观测机构",
+      "document_id": "profile-leg1-qc",
+      "revision": "r1",
+      "received_at": "2026-09-20T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "observation",
+          "id": "profile-a",
+          "revision": "r2",
+          "valid_from": "2026-07-20",
+          "payload": {
+            "metric": "temperature",
+            "region": "fishery-A",
+            "unit": "摄氏度",
+            "depth_min": 10,
+            "depth_max": 30,
+            "value": 20.5
+          }
+        }
+      ]
+    },
+    {
+      "source": "管理站",
+      "document_id": "review-2",
+      "revision": "r1",
+      "received_at": "2026-09-25T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "review",
+          "id": "review-2",
+          "revision": "r1",
+          "valid_from": "2026-09-25",
+          "payload": {
+            "region": "fishery-A",
+            "reason": "质量复核订正 10-30 米实测值（22.5 改为 20.5 摄氏度），原 r1 口径保留可查，停捕调整为限捕",
+            "changed_inputs": ["profile-a"],
+            "before_known_at": "2026-09-01T00:00:00+00:00",
+            "after_known_at": "2026-10-01T00:00:00+00:00"
           }
         }
       ]
